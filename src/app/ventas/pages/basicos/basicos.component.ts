@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
 })
 export class BasicosComponent{
 
-  nombreLower = 'santiago';
-  nombreUpper = 'santiago';
   nombreCompleto = 'sAnTIaGO MarTiNeZ';
 
   fecha: Date = new Date(); //Fecha de hoy

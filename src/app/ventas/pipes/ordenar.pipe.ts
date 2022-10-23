@@ -19,7 +19,7 @@ export class OrdenarPipe implements PipeTransform {
         return heroes;
 
       case 'color':
-        heroes = heroes.sort( (a,b) => (a.color > b.color) ? (-1) : (1));
+        heroes = heroes.sort( (a,b) => (a.color > b.color) ? (1) : (-1));
         return heroes;
 
       default:

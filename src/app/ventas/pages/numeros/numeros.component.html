@@ -7,7 +7,7 @@
 
     <div class="col-4">
         <p-card header="Ventas Netas" 
-        subheader="Del presente año">
+        subheader="{{ventasNetas}}">
             <i class="pi pi-dollar"></i>
             {{ ventasNetas | number:'1.2-3'}}
         </p-card>
@@ -15,14 +15,14 @@
 
     <div class="col-4">
         <p-card header="Ventas Brutas" 
-        subheader="Del presente año">
-            {{ (ventasNetas + 2000000000) | currency: 'COP': 'symbol-narrow': '1.4-4' }}
+        subheader="{{ventasNetas + ' + ' + '2000000' }}">
+            {{ (ventasNetas + 2000000) | currency: 'COP': 'symbol-narrow': '1.2-2' }}
         </p-card>
     </div>
 
     <div class="col-4">
         <p-card header="Ganancia Porcentual" 
-        subheader="Del presente año">
+        subheader="{{porcentaje}}">
         {{porcentaje | percent : '2.2-2'}}
         </p-card>
     </div>

@@ -28,27 +28,35 @@
             <button pButton (click)="eliminarClientes()" class="p-button-rounded p-button-warning" type="button"
             label="Eliminar Cliente" icon="pi pi-user-minus" iconPos="left" disabled = "{{disabled}}"></button>
 
+            <button pButton (click)="agregarClientes()" class="p-button-rounded p-button-primary ml-2" type="button" icon="pi pi-undo" iconPos="left"></button>
+
         </p-fieldset>
     </div>
 
     <div class="col">
         <p-fieldset legend="Slice Pipe" [toggleable]="true">
-            <b>Original</b>
+            <h2>{{'listado original' | titlecase}}</h2>
             <pre>{{ clientes }}</pre>
 
-            <b>slice 0:2</b>
+            <b><i> slice 0:2</i></b>
             <pre>{{ clientes | slice: 0:2 }}</pre>
 
-            <b>slice 1:3</b>
+            <b><i>slice 1:3</i></b>
             <pre>{{ clientes | slice: 1:3 }}</pre>
 
-            <b>String slice 1:3</b>
+            <b><i>String slice 1:3</i></b>
             <pre>{{ "Aguacate" | slice: 0:4 }}</pre>
 
         </p-fieldset>
     </div>
 
     <div class="col">
+
+        <p-fieldset class=" row-6 " legend="Json Pipe" [toggleable]="true">
+            <p>{{ persona | json }}</p>
+        </p-fieldset>
+
+        <br>
 
         <p-fieldset class="row" legend="KeyValue Pipe" [toggleable]="true">
             <ul>
@@ -58,9 +66,7 @@
             </ul>
         </p-fieldset>
 
-        <p-fieldset class=" row-6 " legend="Json Pipe" [toggleable]="true">
-            <p>{{ heroes | json }}</p>
-        </p-fieldset>
+
 
     </div>
 

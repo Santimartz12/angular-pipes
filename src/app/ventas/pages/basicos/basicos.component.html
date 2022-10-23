@@ -8,20 +8,20 @@
 
     <div class="col-4">
         <p-card header="Uppercase" 
-            [subheader]="nombreLower | uppercase">
-            {{nombreLower}}
+            [subheader]="nombreCompleto">
+            {{nombreCompleto  | uppercase}}
         </p-card>
     </div>
     <div class="col-4">
         <p-card header="Lowercase" 
-            [subheader]="nombreUpper | lowercase">
-            {{nombreUpper}}
+            [subheader]="nombreCompleto">
+            {{nombreCompleto  | lowercase}}
         </p-card>
     </div>
     <div class="col-4">
         <p-card header="Titlecase" 
-            [subheader]="nombreCompleto | titlecase">
-            {{nombreCompleto}}
+            [subheader]="nombreCompleto">
+            {{nombreCompleto  | titlecase}}
         </p-card>
     </div>
 

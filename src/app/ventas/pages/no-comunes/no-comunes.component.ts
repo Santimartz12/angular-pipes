@@ -28,7 +28,7 @@ export class NoComunesComponent {
 
   cambiarNombre(){
     if (this.nombre == 'Santiago'){
-      this.nombre = 'Sofia'
+      this.nombre = 'Isabel';
       this.genero = 'femenino';
     }else{
       this.nombre = 'Santiago'
@@ -46,11 +46,17 @@ export class NoComunesComponent {
 
   }
 
+  agregarClientes(){
+    this.clientes =  ['Maria', 'Jose', 'Pepe', 'Luis', 'Santiago'];
+    this.disabled = '';
+  }
+
 
   persona = {
     nombre : 'Santiago',
-    edad: 35,
-    direccion: 'Falan',
+    edad: 20,
+    ocupacion: 'Desarrollador FrontEnd',
+    direccion: 'Tolima - Colombia',
   }
 
   heroes = [

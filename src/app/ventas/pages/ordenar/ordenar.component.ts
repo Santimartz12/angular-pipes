@@ -37,6 +37,16 @@ export class OrdenarComponent {
       vuela: true,
       color: Color.verde,
     },
+    {
+      nombre: 'Capitan America',
+      vuela: false,
+      color: Color.azul,
+    },
+    {
+      nombre: 'Hulk',
+      vuela: false,
+      color: Color.verde,
+    },
   ];
 
   cambiar(){
